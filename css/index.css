@@ -1,0 +1,453 @@
+@charset "UTF-8";
+
+.fv-wrap h1{
+  font-size: 5vw;
+  font-family: Montserrat;
+  font-weight: 800;
+  margin-left:2vw;
+}
+.glowAnime span {
+  opacity: 0;
+}
+.glowAnime.glow span {
+  animation: glow_anime_on 2s ease-out forwards;
+}
+@keyframes glow_anime_on {
+  0% {
+    opacity: 0;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+  }
+}
+.fv-wrap__img{
+  margin:0 auto;
+  position: relative;
+  width: 95vw;
+  height: 80vh;
+  transform: translateY(-10vh);
+}
+.image{
+  width:100%;
+  height:100%;
+  position: absolute;
+  opacity: 0;
+  animation: change-img-anim 20s infinite;
+}
+
+.image:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+  animation-delay: 10s;
+}
+@keyframes change-img-anim {
+  0%{ opacity: 0;}
+  50%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+.s-btn{
+  transform:translate(85vw,-13vh);
+  z-index: 2;
+}
+.concept{
+  transform: translateY(-5vh);
+}
+.concept-wrap__txt{
+  text-align: center;
+  margin:3% auto;
+  position: relative;
+  width:50%;
+}
+.concept-wrap__txt p::before{
+  content:"";
+  width:50%;
+  height:100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0)100%);
+  position: absolute;
+  top:10%;
+  left:15%;
+  display: block;
+  z-index: -1;
+}
+.concept-wrap__txt p{
+  text-align: left;
+  display: inline-block;
+}
+.concept-wrap__txt span {
+  font-weight:600;
+  line-height: 3;
+  font-size: 24px;
+}
+.concept-wrap__txt p {
+  line-height: 2.3;
+  font-weight: 500;
+  font-size: 18px;
+}
+.concept-wrap__bg{
+  width:100%;
+  position: absolute;
+  top:15vh;
+  left:0;
+  z-index: -2;
+  overflow: hidden;
+}
+.concept-wrap__bg__block{
+  font-size: 6.5vw;
+  color:#EDF1F2;
+  font-weight: 800;
+  line-height: 15vh;
+  display:flex;
+  white-space: nowrap;
+}
+.loop1:nth-child(odd) {
+  animation: loopA 50s -25s linear infinite;
+}
+.loop1:nth-child(even) {
+  animation: loopB 50s linear infinite;
+}
+
+@keyframes loopA {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loopB {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+.loop2:nth-child(odd) {
+  animation: loopC 50s -25s linear infinite;
+}
+
+.loop2:nth-child(even) {
+  animation: loopD 50s linear infinite;
+}
+
+@keyframes loopC {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes loopD {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.service-wrap__con{
+  display: flex;
+  justify-content: space-between;
+  margin:3% auto;
+}
+.service-wrap__con__block{
+  width:30%;
+  display: flex;
+  flex-direction: column;
+}
+.service-wrap__con__block__img{
+  width:90%;
+  height:60vh;
+}
+.service-wrap__con__block__img img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.r-btn{
+  transform: translate(20vw,-3vh);
+}
+.service-wrap__con__block__ttl{
+  font-weight: 500;
+  font-size:18px;
+  transform: translateY(-2vh);
+}
+.service-wrap__con__block__txt{
+  width:90%;
+}
+.service-wrap__con__block__no{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size:3vw;
+  margin-top: auto;
+}
+.service-wrap__con__block__no.line{
+  width:65%;
+  transform: translate(40%,-4vh);
+}
+.__service2{
+  transform: translateY(20vh);
+}
+.voice{
+  transform: translateY(20vh);
+}
+.voice-wrap__con{
+  margin:3% auto;
+  width:100%;
+  display:flex;
+  align-items: center;
+  overflow: hidden;
+}
+.voice-wrap__con__list{
+  display: flex;
+  animation: slide-flow 20s infinite linear 1s both;
+}
+.voice-wrap__con__list__block{
+  width:38vw;
+  margin:3% 3%;
+  box-shadow: 4px 4px 10px 4px #b8b8b8;
+}
+.voice-wrap__con__list__block img {
+  display: block;
+  width: 100%;
+  height:auto;
+}
+.voice-wrap__con__list__block__txt {
+  width: 100%;
+  height: 13vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.voice-wrap__con__list__block__txt span {
+  width: 6vw;
+  font-size: 2.3vw;
+  font-weight: 500;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+@keyframes slide-flow {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.slide-paused:hover .voice-wrap__con__list {
+  animation-play-state: paused;
+}
+
+.slide-paused:hover .voice-wrap__con__list img:hover {
+  opacity: .8;
+  cursor: grabbing;
+}
+.news{
+  transform: translateY(20vh);
+}
+.news-wrap__con{
+  margin:3% auto;
+}
+.news-wrap__con__list__item{
+  width:75%;
+  margin:0 auto;
+}
+.news-wrap__con__list__item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-bottom: solid 1px #2C3E50;
+  margin-bottom: 1.5%;
+  padding-bottom: 1.5%;
+}
+.news-wrap__con__list__item span{
+  width:13vw;
+  margin-right:2%
+}
+.news-wrap__con__list__item p:last-child{
+  display: block;
+  margin-left:7%;
+}
+.contact {
+  transform: translateY(20vh);
+}
+.footer {
+  transform: translateY(20vh);
+}
+
+@media screen and (max-width: 1024px){
+  .fv-wrap__img {
+    height: 60vh;
+    transform: translateY(-5vh);
+  }
+  .s-btn {
+    transform: translate(85vw, -10vh);
+  }
+  .concept {
+    transform: translateY(0vh);
+  }
+  .concept-wrap__txt {
+  width: 60%;
+  }
+  .service-wrap__con__block {
+    width: 33%;
+  }
+  .service-wrap__con__block__ttl {
+    font-size: 16px;
+  }
+  .service-wrap__con__block__txt {
+    width: 92%;
+  }
+  .service-wrap__con__block__no.line {
+    transform: translate(30%,-3vh);
+  }
+  .news-wrap__con__list__item {
+    width: 92%;
+  }
+  .news-wrap__con__list__item span {
+    width: 17vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .concept,.service,.voice,.contact,.news,.footer{
+    transform: translateY(10vh);
+  }
+  .fv-wrap__img {
+    height: 50vh;
+    transform: translateY(0vh);
+  }
+  .s-btn {
+    display: none;
+  }
+  .fv-wrap h1 {
+    font-size: 6vw;
+  }
+  .concept-wrap__txt{
+    width:90%;
+  }
+  .concept-wrap__txt span,.concept-wrap__txt p{
+    font-size: 16px;
+  }
+  .concept-wrap__bg {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+  }
+  .concept-wrap__bg__block {
+    font-size: 10vw;
+    line-height: 14.5vh;
+  }
+  .service-wrap__con {
+    display: block;
+  }
+  .service-wrap__con__block {
+    width: 60vw;
+    margin:8% auto;
+  }
+  .service-wrap__con__block__img {
+    height:auto;
+  }
+  .r-btn {
+    transform:translate(50vw,-2vh)
+  }
+  .__service2 {
+    transform: translateY(0vh);
+  }
+  .service-wrap__con__block__no{
+    font-size: 5vw;
+  }
+  .service-wrap__con__block__no.line {
+    width: 70%;
+  }
+  .voice-wrap__con{
+    margin:3% auto;
+  }
+  .voice-wrap__con__list:nth-of-type(2),
+  .voice-wrap__con__list:nth-of-type(3) {
+      display: none
+  }
+  .voice-wrap__con__list {
+    animation: none;
+    display: block;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .voice-wrap__con__list__block {
+    width: 100%;
+    margin:3vh auto;
+  }
+  .voice-wrap__con__list__block__txt span {
+    width: 20%;
+    font-size: 4vw;
+  }
+  .news-wrap__con__list__item{
+    display: block;
+    margin-bottom: 5%;
+    }
+  .news-wrap__con__list__item p:last-child{
+    margin-left:0;
+  }
+  .news-wrap__con__list__item span{
+    font-weight: 500;
+  }
+  .footer{
+    margin-bottom: -1%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fv-wrap__img {
+    width:90vw;
+    height: 50vh;
+  }
+  .fv-wrap h1 {
+    font-size: 8vw;
+    width:70vw;
+    line-height:10vw;
+    display: block;
+    margin: 3%;
+  }
+  .concept-wrap__txt span{
+  font-size: 15px;
+  }
+  .concept-wrap__txt p {
+    line-height: 2;
+    font-size: 14.5px;
+  }
+  .concept-wrap__bg{
+    position: absolute;
+    top:8vh;
+    left:0;
+  }
+  .concept-wrap__bg__block{
+    font-size: 18vw;
+    line-height: 13vh;
+  }
+  .service-wrap__con__block__ttl {
+    font-size: 16px;
+  }
+  .voice-wrap__con__list__block__txt span {
+    width: 20%;
+    font-size: 6vw;
+  }
+
+}
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>【official】UpTrade</title>
+  <meta name="description" content="【UpTrade】貿易業務をスマートに">
+  <meta name="keywords" content="IT,貿易,業務効率化">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="https://uptrade.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="【official】UpTrade">
+  <meta property="og:description" content="【UpTrade】貿易業務をスマートに">
+  <meta property="og:site_name" content="UpTrade">
+  <meta property="og:image" content="https://uptrade.com/img/logo.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180×180" href="img/logo.png">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/common1.css">
+  <link rel="stylesheet" type="text/css" href="/css/common2.css">
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header-wrap">
+      <a href="index.html" class="header-wrap__logo">
+        <img src="/img/logo.png" alt="ロゴ画像">
+      </a>
+      <nav class="header-wrap__nav">
+        <ul class="header-wrap__nav__list">
+          <li class="header-wrap__nav__list__item">
+            <a href="service.html" class="rotate"><span>SERVICE</span><span>SERVICE</span></a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="company.html" class="rotate"><span>COMPANY</span><span>COMPANY</span></a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="news.html" class="rotate"><span>NEWS</span><span>NEWS</span></a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="contact.html" class="rotate"><span>CONTACT</span><span>CONTACT</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="drawer"></div>
+  </header>
+  <main>
+    <section class="top" id="top">
+      <div class="top-wrap">
+        <div class="top-wrap__img">
+          <img src="/img/top-con.jpg" alt="トップ画像">
+        </div>
+        <h1 class="m-ttl">Contact us</h1>
+        <div class="s-btn"><a href="contact.html#contact"><span>↓</span><span>Click!</span></a></div>
+      </div>
+    </section>
+    <section class="breadcrumb" id="breadcrumb">
+      <div class="breadcrumb-wrap">
+        <ul class="breadcrumb-wrap__list">
+          <li class="breadcrumb-wrap__list__item">
+            <a href="index.html"><span>Home</span></a>
+          </li>
+          <li class="breadcrumb-wrap__list__item">
+            <a href="news.html"><span class="b-color">Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-wrap __inner">
+        <h2>お問合せフォーム</h2>
+        <p>ご質問・ご相談などのお問い合わせは<br class="__sp">このフォームよりお送りください。<br>
+        内容確認後、担当よりご連絡いたします。</p>
+        <div class="contact-wrap__form">
+          <form action="../mail.php" id="form" method="POST" class="contact-wrapper__form">
+            <div class="contact-wrap__form__box">
+              <label for="name" class="contact-wrap__form__box__ttl">お問い合わせ項目</label>
+              <select name="お問い合わせ項目" required="required" class="contact-wrap__form__box__select">
+                <optgroup value>
+                  <option value="プルダウンメニューで問い合わせ内容を選択" hidden class="contact-wrap__form__box__select__with">お問い合わせ内容を選択</option>
+                  <option value="お問い合わせ" class="contact-wrap__form__box__select__with">お問い合わせ</option>
+                  <option value="資料請求" class="contact-wrap__form__box__select__with">資料請求</option>
+                  <option value="採用問い合わせ" class="contact-wrap__form__box__select__with">採用問い合わせ</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="name" class="contact-wrap__form__box__ttl">お名前（漢字）</label>
+              <input type="text" class="contact-wrap__form__box__input" name="お名前（漢字）" required="required"
+                placeholder="お名前をご入力下さい">
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="company" class="contact-wrap__form__box__ttl">貴社名</label>
+              <input type="text" class="contact-wrap__form__box__input" company="貴社名" required="required"
+                placeholder="貴社名をご入力下さい">
+            </div>
+            <div class="contact-wrap__form__box">
+              <label for="email" class="contact-wrap__form__box__ttl">メールアドレス</label>
+              <input type="email" class="contact-wrap__form__box__input" name="メールアドレス" required="required"
+                placeholder="例）example@example.com">
+            </div>
+            <div class="contact-wrap__form__box __area">
+              <label for="message" class="contact-wrap__form__box__ttl">お問い合わせ内容</label>
+              <textarea name="お問い合わせ内容" class="contact-wrap__form__box__area" id="message" required="required"
+                placeholder="お問い合わせ内容をご入力下さい"></textarea>
+            </div>
+            <button type="submit" class="btn">送信する</button>
+          </form>
+        </div>
+      </div>      
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="footer-wrap __inner">
+      <div class="footer-wrap__top">
+        <img src="/img/logo.png">
+        <p>〒100-0020　東京都墨田区立川菊川4-22</p>
+      </div>
+      <div class="footer-wrap__mid">
+        <nav class="footer-wrap__nav">
+          <ul class="footer-wrap__nav__list">
+            <li class="footer-wrap__nav__list__item">
+              <a href="service.html" class="rotate"><span>SERVICE</span><span>SERVICE</span></a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="company.html" class="rotate"><span>COMPANY</span><span>COMPANY</span></a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="news.html" class="rotate"><span>NEWS</span><span>NEWS</span></a>
+            </li>
+            <li class="footer-wrap__nav__list__item">
+              <a href="contact.html" class="rotate"><span>CONTACT</span><span>CONTACT</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-wrap__bot">
+        <small>🄫UpTrade inc.</small>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  </body>
+</html>
+  

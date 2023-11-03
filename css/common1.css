@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'IBM Plex Sans JP', sans-serif;
+  font-weight:400;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #2C3E50;
+  background:linear-gradient(90deg, rgba(66, 180, 231, 0.23) 0%, rgba(255, 255, 255, 0.13) 40%, rgba(255, 255, 255, 0.13) 60%, rgba(216.76, 116.78, 70.52, 0.23) 100%);
+}
+a {
+  text-decoration: none;
+  color: #2C3E50;
+}
+li {
+  list-style: none;
+}
+.s-btn{
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  border: solid 1px #2C3E50;
+  text-align: center;
+}
+.s-btn a{
+  font-size: 1.8vw;
+  line-height: 7vw;
+}
+.s-btn span:nth-child(2) {
+  display: none;
+  font-size:1.2vw;
+}
+.s-btn:hover span:nth-child(1) {
+  display: none;
+}
+.s-btn:hover span:nth-child(2) {
+  display: block;
+}
+.__inner{
+  width:80%;
+  margin: 0 auto 5%;
+}
+.s-ttl{
+  font-size: 4vw;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.ttl-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.s-ttl-txt{
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+.s-ttl-txt {
+  perspective: 300px;
+  display: inline-block;
+}
+
+.s-ttl-txt span {
+  backface-visibility: hidden;
+  transition: transform .5s;
+  display: block;
+  height: 20px;
+}
+
+.s-ttl-txt span:first-child {
+  transform: translateY(10px) rotateX(0deg);
+}
+
+.s-ttl-txt span:last-child {
+  transform: rotateX(-90deg);
+}
+
+.s-ttl-txt:hover span:first-child {
+  transform: rotateX(90deg);
+}
+
+.s-ttl-txt:hover span:last-child {
+  transform: translateY(-10px) rotateX(0deg);
+}
+.line {
+  content: "";
+  display: block;
+  width:25vw;
+  height: 0.8px;
+  background-color: #2C3E50;
+  margin:0 2%;
+}
+.r-btn {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  border: solid 1px #2C3E50;
+  text-align: center;
+}
+.r-btn a {
+  font-size: 1.7vw;
+  line-height: 5vw;
+}
+
+.r-btn span:nth-child(2) {
+  display: none;
+  font-size: 1vw;
+}
+.r-btn:hover span:nth-child(1) {
+  display: none;
+}
+.r-btn:hover span:nth-child(2) {
+  display: block;
+}
+
+.c-btn a{
+  padding:4% 10%;
+  border-radius: 30px;
+  border: solid 1px #2C3E50;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.c-btn a:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 10%;
+  height: 150%;
+  background: #FFF;
+  transform: rotate(45deg);
+  animation: reflect 5s ease-in-out infinite;
+}
+
+.c-btn a:hover {
+  opacity: 0.7;
+}
+
+@keyframes reflect {
+  0%,
+  75% {
+    transform: rotate(45deg) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) scale(100);
+    opacity: 0;
+  }
+}
+.m-ttl{
+  text-align: center;
+  font-size: 4.5vw;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.top-wrap .s-btn{
+  transform: translate(85vw,-14vh);
+}
+.breadcrumb{
+  transform: translateY(-15vh);
+}
+.__sp,.__tb{
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .__inner {
+  width: 85%;
+  }
+  .__sp {
+    display: none;
+  }
+  .__tb{
+    display: inline-block;
+  }
+  .s-btn {
+    width: 9vw;
+    height: 9vw;
+  }
+  .s-btn a {
+    font-size: 2vw;
+    line-height: 9vw;
+  }
+  .s-btn span:nth-child(2) {
+    font-size: 1.5vw;
+  }
+  .s-ttl {
+    font-size: 5vw;
+  }
+  .m-ttl {
+    text-align: center;
+    font-size: 6vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .r-btn {
+    width: 8vw;
+    height: 8vw;
+  }
+  .r-btn a {
+    font-size: 3vw;
+    line-height: 8vw;
+  }
+  .r-btn span:nth-child(2) {
+    font-size: 14px;
+  }
+  .line{
+    width:15vw;
+  }
+  .__sp{
+    display: none;
+  }
+  .__tb {
+    display: inline-block;
+  }
+  .s-ttl {
+    font-size: 5vw;
+  }
+  .s-btn {
+    width: 10vw;
+    height: 10vw;
+  }
+  .s-btn a {
+    font-size: 1.8vw;
+    line-height: 10vw;
+}
+
+.s-btn span:nth-child(2) {
+  display: none;
+  font-size: 1.8vw;
+}
+
+
+}
+@media screen and (max-width: 480px) {
+  body{
+    font-size: 14px;
+  }
+  .__sp {
+  display: inline-block;
+  }
+  .__tb {
+    display: inline-block;
+  }
+  .s-ttl {
+    font-size: 6vw;
+  }
+}

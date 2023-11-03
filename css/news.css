@@ -1,0 +1,119 @@
+@charset "UTF-8";
+.news {
+  transform: translateY(-5vh);
+}
+.news-wrap__con__list__item {
+  width: 75%;
+  margin: 0 auto;
+}
+.news-wrap__con__list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: solid 1px #2C3E50;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+}
+.news-wrap__con__list__item span {
+  width: 13vw;
+  margin-right: 2%
+}
+.news-wrap__con__list__item p:last-child {
+  display: inline-block;
+  margin-left: 7%;
+}
+.news-wrap__con__btn{
+  width:30vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:5% auto;
+}
+.news-wrap__con__btn .s-btn{
+  width:3.5vw;
+  height:3.5vw;
+}
+.news-wrap__con__btn .s-btn a{
+  font-size: 1.2vw;
+  line-height: 3.5vw;
+}
+.news-wrap__con__btn .s-btn span:nth-child(2) {
+  font-size: 1vw;
+}
+.footer {
+  margin-bottom: -50vh;
+}
+@media screen and (max-width: 1024px) {
+  .news-wrap__con__list__item {
+      width: 92%;
+    }
+  .news-wrap__con__list__item span {
+    width: 17vw;
+  }
+  .news-wrap__con__btn{
+  width:40vw;
+  }
+  .news-wrap__con__btn .s-btn{
+    width:4.5vw;
+    height:4.5vw;
+  }
+  .news-wrap__con__btn .s-btn a{
+    font-size: 1.7vw;
+    line-height: 4.5vw;
+  }
+  .news-wrap__con__btn .s-btn span:nth-child(2) {
+  font-size: 1.3vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news,.footer{
+    transform: translateY(5vh);
+  }
+  .news-wrap__con__list__item {
+    display: block;
+    margin-bottom: 5%;
+  }
+  .news-wrap__con__list__item p:last-child {
+    margin-left: 0;
+  }
+  .news-wrap__con__list__item span {
+    font-weight: 500;
+  }
+  .news-wrap__con__btn .s-btn{
+    display: block;
+  }
+  .news-wrap__con__btn{
+    width:45vw;
+  }  
+  .news-wrap__con__btn .s-btn{
+    width:5.5vw;
+    height:5.5vw;
+  }
+  .news-wrap__con__btn .s-btn a{
+    font-size: 2vw;
+    line-height: 5.5vw;
+  }
+  .news-wrap__con__btn .s-btn span:nth-child(2) {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .news,
+    .footer {
+      transform: translateY(7vh);
+  }
+  .news-wrap__con__btn{
+    width:50vw;
+  }  
+  .news-wrap__con__btn .s-btn{
+    width:6.5vw;
+    height:6.5vw;
+  }
+  .news-wrap__con__btn .s-btn a{
+    font-size: 2.5vw;
+    line-height: 6.5vw;
+  }
+  .news-wrap__con__btn .s-btn span:nth-child(2) {
+    font-size: 1.8vw;
+  }
+}
