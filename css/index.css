@@ -207,24 +207,26 @@
 }
 .voice-wrap__con{
   margin:3% auto;
-  width:100%;
-  display:flex;
-  align-items: center;
-  overflow: hidden;
+  width:94%;
 }
-.voice-wrap__con__list{
-  display: flex;
-  animation: slide-flow 20s infinite linear 1s both;
+.voice-wrap__con__list .slick-slide {
+  transform: scale(0.8);
+  transition: all .5s;
+  opacity: 0.5;
 }
+
+.voice-wrap__con__list .slick-slide.slick-center {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .voice-wrap__con__list__block{
-  width:38vw;
-  margin:3% 3%;
+  width:35vw;
+  margin-bottom: 2vh;
   box-shadow: 4px 4px 10px 4px #b8b8b8;
 }
 .voice-wrap__con__list__block img {
-  display: block;
   width: 100%;
-  height:auto;
 }
 .voice-wrap__con__list__block__txt {
   width: 100%;
@@ -234,7 +236,6 @@
   justify-content: flex-start;
   align-items: center;
 }
-
 .voice-wrap__con__list__block__txt span {
   width: 6vw;
   font-size: 2.3vw;
@@ -242,24 +243,60 @@
   font-family: Montserrat;
   text-align: center;
 }
-
-@keyframes slide-flow {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #2C3E50;
+  /*矢印の色*/
+  border-right: 2px solid #2C3E50;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
 }
-.slide-paused:hover .voice-wrap__con__list {
-  animation-play-state: paused;
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
 }
 
-.slide-paused:hover .voice-wrap__con__list img:hover {
-  opacity: .8;
-  cursor: grabbing;
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
 }
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots{
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  border: none;
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 50%;
+  background: #EDF1F2;
+}
+
+.slick-dots .slick-active button {
+  background: #2C3E50;
+}
+
 .news{
   transform: translateY(20vh);
 }
@@ -378,31 +415,10 @@
   .service-wrap__con__block__no.line {
     width: 70%;
   }
-  .voice-wrap__con{
-    margin:3% auto;
-  }
-  .voice-wrap__con__list:nth-of-type(2),
-  .voice-wrap__con__list:nth-of-type(3) {
-      display: none
-  }
-  .voice-wrap__con__list {
-    animation: none;
-    display: block;
-    width: 60vw;
-    margin: 0 auto;
-  }
-  .voice-wrap__con__list__block {
-    width: 100%;
-    margin:3vh auto;
-  }
-  .voice-wrap__con__list__block__txt span {
-    width: 20%;
-    font-size: 4vw;
-  }
-  .news-wrap__con__list__item{
+  .news-wrap__con__list__item {
     display: block;
     margin-bottom: 5%;
-    }
+  }
   .news-wrap__con__list__item p:last-child{
     margin-left:0;
   }
@@ -411,6 +427,13 @@
   }
   .footer{
     margin-bottom: -1%;
+  }
+  .voice-wrap__con__list__block {
+    width: 60vw;
+  }
+  .voice-wrap__con__list__block__txt span {
+    width:10vw;
+    font-size: 4.5vw;
   }
 }
 @media screen and (max-width: 480px) {
@@ -444,10 +467,5 @@
   .service-wrap__con__block__ttl {
     font-size: 16px;
   }
-  .voice-wrap__con__list__block__txt span {
-    width: 20%;
-    font-size: 6vw;
-  }
-
 }
 

@@ -85,6 +85,7 @@ select{
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
+  transition: 2s;
 }
 
 .btn::after {
@@ -99,7 +100,7 @@ select{
   animation: reflect 5s ease-in-out infinite;
 }
 .btn:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .footer {
   margin-bottom: -50vh;
