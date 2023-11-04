@@ -61,10 +61,13 @@
   justify-content: flex-start;
   align-items: center;
 }
-.footer-wrap__top img {
+.footer-wrap__top__logo {
   display: block;
   width: 15vw;
   margin-right:10%;
+}
+.footer-wrap__top__logo img {
+  width:100%;
 }
 .footer-wrap__nav__list{
   width:45vw;
@@ -198,7 +201,7 @@
   .header-wrap__logo {
     width: 20vw;
   }
-  .footer-wrap__top img {
+  .footer-wrap__top__logo{
     width: 21vw;
     margin-right: 3%;
   }
@@ -255,7 +258,7 @@
   .footer-wrap__top{
     display: block;
   }
-  .footer-wrap__top img {
+  .footer-wrap__top__logo {
     width: 25vw;
     margin-bottom: 5%;
   }
