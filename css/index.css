@@ -255,19 +255,23 @@
   position: relative;
   z-index: 5;
 }
+.slick-dots li {
+  margin: 0 5px;
+  display: inline-block;
+}
 .slick-dots button {
   color: transparent;
-  border: none;
   display: block;
   border-radius: 50%;
   outline: none;
-  background: #EDF1F2;
+  background:#fff
 }
-
+.slick-dots li button:before{
+  font-size:20px;
+}
 .slick-dots .slick-active button {
   background: #EDF1F2;
 }
-
 .news{
   transform: translateY(20vh);
 }
