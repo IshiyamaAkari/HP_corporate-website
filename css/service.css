@@ -391,6 +391,10 @@
     display: block;
     margin-top: 5%;
   }
+  .service-wrap__con__block__main{
+    display: block;
+    margin-top: 5%;
+  }
   .service-wrap__con__block__sub {
     display: block;
   }
@@ -481,6 +485,13 @@
   .service-wrap__con__block {
     width: 60vw;
     height:auto;
+  }
+  .service-wrap__con__block__main__left{
+    width:60vw;
+    height:60vw;
+  }
+  .service-wrap__con__block__sub img {
+    width: 70%;
   }
   .line2 {
       width: 50vw;

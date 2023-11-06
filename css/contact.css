@@ -132,7 +132,7 @@ select{
   .contact-wrap__form__box__ttl::after {
     width:7vw;
     height:4vh;
-    line-height: 2;
+    line-height: 4vh;
     position: absolute;
     top: 50%;
     left: 180%;
@@ -149,6 +149,6 @@ select{
       transform: translateY(7vh);
   }
   .contact-wrap__form__box__ttl::after {
-    width: 9vw;
+    width: 12vw;
   }
 }

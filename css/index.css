@@ -267,11 +267,9 @@
   background:#fff
 }
 .slick-dots li button:before{
-  font-size:20px;
+  font-size:25px;
 }
-.slick-dots .slick-active button {
-  background: #EDF1F2;
-}
+
 .news{
   transform: translateY(20vh);
 }

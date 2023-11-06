@@ -275,4 +275,10 @@ li {
   .s-ttl {
     font-size: 6vw;
   }
+  .s-ttl-txt{
+  font-size: 13px;
+  }
+  .line{
+    width:15vw;
+  }
 }
